@@ -1,0 +1,135 @@
+.container{
+	width: 100vw;
+	height: 56px;
+	border-bottom: 2px solid black;
+	padding-bottom: 2px;
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+
+}
+
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.notification-box{
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	width: 48%;
+	/*border: 1px solid wheat;*/
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.notification-button{
+	margin: 4px;
+	border-radius: 8px;
+	border: 1px solid wheat;
+	width: 8%;
+	cursor: pointer;
+}
+
+.notification-button:hover{
+	background: rgba(82, 82, 82, 1.0);
+	transition: 0.5s;
+}
+
+.message-bar{
+	width: 80%;
+	border-radius: 8px;
+	border: 1px solid wheat;
+}
+
+/*prevet to not selecting text*/
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently                                 supported by Chrome, Edge, Opera and Firefox */
+}
+
+.market{
+	width: 22%;
+	border: 1px solid wheat;
+	font-size: 14px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.market-box{
+	display: grid;
+	grid-template-areas: 
+		'u u u'
+		'p p c';
+	grid-column-gap: 2px;
+	cursor: pointer;
+}
+
+.underlying{
+	grid-area: u;
+}
+
+.price{
+	grid-area: p;
+}
+.change{
+	grid-area: c;
+}
+
+.red{
+	color: rgb(247, 20, 20);
+}
+.green{
+	color: yellow;
+}
+
+
+.user{
+	width: 22%;
+	border: 1px solid wheat;
+	height: 56px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu-button{
+	border: 1px solid wheat;
+	border-radius: 8px;
+	cursor: pointer;
+	padding: 6px;
+}
+
+.no-active{
+	display: none;
+}
+.active{
+	display: block;
+	position: absolute;
+}
+
+.active ul{
+	border: 1px solid wheat;
+	padding: 8px;
+	margin-top: 4px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+}
+
+.active li{
+	padding: 4px;
+	margin: 4px;
+	border-radius: 8px;
+	list-style-type: none;
+	border: 1px solid wheat;
+}
+
+

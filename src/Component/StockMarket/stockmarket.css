@@ -1,0 +1,57 @@
+.stockmarket-box{
+	height: 91vh;
+	width: 33vw;
+	/*padding-top: 4px;*/
+	border-right: 2px solid wheat;
+	font-family: sans-serif;
+}
+
+.bar{
+	background: transparent;
+	display: flex;
+	padding-top: 4px;
+}
+.watchlist{
+	background: transparent;
+	width: 90%;
+	display: flex;
+	overflow: scroll;
+	overflow-y: hidden;
+}
+.watchlist-button{
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	background: transparent;
+	cursor: pointer;
+}
+
+.watchlist-item{
+	height: 18px;
+	min-width: 50px;
+	padding-right: 8px;
+	padding-left: 8px;
+	cursor: pointer;
+	margin-right: 8px;
+	margin-left: 8px;
+	display: flex;
+	justify-content: center;
+}
+
+.hover:hover{
+	background: rgba(82, 82, 82, 1.0);
+	transition: 0.5s;
+}
+.hover *{
+	text-decoration: none;
+	background: transparent;
+}
+
+.close{
+	transition: 0.5s;
+	display: none;
+}
+.open{
+	transition: 0.5s;
+	display: all;
+}
